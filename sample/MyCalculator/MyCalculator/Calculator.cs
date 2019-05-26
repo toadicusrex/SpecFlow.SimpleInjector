@@ -4,23 +4,23 @@ namespace MyCalculator
 {
     public class Calculator : ICalculator
     {
-        private readonly Stack<int> operands = new Stack<int>();
+        private readonly Stack<int> _operands = new Stack<int>();
 
-        public int Result => operands.Peek();
+        public int Result => _operands.Peek();
 
         public void Enter(int operand)
         {
-            operands.Push(operand);
+            _operands.Push(operand);
         }
 
         public void Add()
         {
-            operands.Push(operands.Pop() + operands.Pop());
+            _operands.Push(_operands.Pop() + _operands.Pop());
         }
 
         public void Multiply()
         {
-            operands.Push(operands.Pop() * operands.Pop());
+            _operands.Push(_operands.Pop() * _operands.Pop());
         }
     }
 }

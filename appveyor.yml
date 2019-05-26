@@ -5,18 +5,17 @@ branches:
   - master
 
 environment:
-  BaseVersion: 1.0.1
-  NugetVersion: "1.0.1-ci$(APPVEYOR_BUILD_NUMBER)"
+  BaseVersion: 2.0.0
+  NugetVersion: "2.0.0-ci$(APPVEYOR_BUILD_NUMBER)"
   
-cache:
-  - src\packages -> src\**\packages.config
-
-assembly_info:
+dotnet_csproj:
   patch: true
-  file: 'src\**\AssemblyInfo.*'
-  assembly_version: "$(BaseVersion)"
-  assembly_file_version: "$(BaseVersion)"
-  assembly_informational_version: "$(NugetVersion)"
+  file: '*.csproj'
+  version: "$(BaseVersion"
+  package_version: "$(BaseVersion"
+  assembly_version: "$(BaseVersion"
+  file_version: "$(BaseVersion"
+  informational_version: "$(NugetVersion)"
 
 nuget:
   project_feed: true
@@ -36,4 +35,4 @@ build:
   verbosity: normal
 
 artifacts:
-- path: 'src\NuGetPackages\bin\*.nupkg'
+- path: 'src\SpecFlow.SimpleInjector.SpecFlowPlugin\bin\Release\*.nupkg'

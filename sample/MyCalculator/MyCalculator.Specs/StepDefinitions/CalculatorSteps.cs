@@ -7,17 +7,17 @@ namespace MyCalculator.Specs.StepDefinitions
     [Binding]
     public class CalculatorSteps
     {
-        private readonly ICalculator calculator;
+        private readonly ICalculator _calculator;
 
         public CalculatorSteps(ICalculator calculator)
         {
-            this.calculator = calculator;
+            _calculator = calculator;
         }
 
         [Given(@"I have entered (.*) into the calculator")]
         public void GivenIHaveEnteredIntoTheCalculator(int operand)
         {
-            calculator.Enter(operand);
+            _calculator.Enter(operand);
         }
 
         [Given(@"I have entered the following numbers")]
@@ -25,26 +25,26 @@ namespace MyCalculator.Specs.StepDefinitions
         {
             foreach (var number in table.Rows.Select(r => int.Parse(r["number"])))
             {
-                calculator.Enter(number);
+                _calculator.Enter(number);
             }
         }
 
         [When(@"I press add")]
         public void WhenIPressAdd()
         {
-            calculator.Add();
+            _calculator.Add();
         }
 
         [When(@"I press multiply")]
         public void WhenIPressMultiply()
         {
-            calculator.Multiply();
+            _calculator.Multiply();
         }
 
         [Then(@"the result should be (.*) on the screen")]
         public void ThenTheResultShouldBeOnTheScreen(int expectedResult)
         {
-            Assert.AreEqual(expectedResult, calculator.Result);
+            Assert.AreEqual(expectedResult, _calculator.Result);
         }
     }
 }

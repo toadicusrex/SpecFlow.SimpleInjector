@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>SpecFlow.SimpleInjector</id>
+    <version>2.0.0-localdev</version>
+    <title>SpecFlow SimpleInjector integration plugin</title>
+    <authors>Jakub Guc</authors>
+    <owners>Jakub Guc</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">LICENSE</license>
+    <projectUrl>https://github.com/jguc/SpecFlow.SimpleInjector</projectUrl>
+    <iconUrl>http://go.specflow.org/specflow-nuget-icon</iconUrl>
+    <description>SpecFlow plugin that enables to use SimpleInjector for resolving test dependencies.</description>
+    <summary>SpecFlow plugin that enables to use SimpleInjector for resolving test dependencies.</summary>
+    <releaseNotes>See GitHub project page, https://github.com/jguc/SpecFlow.SimpleInjector</releaseNotes>
+    <copyright>Copyright © 2017 Jakub Guc</copyright>
+    <language>en-US</language>
+    <tags>specflow SimpleInjector di dependency injection</tags>
+    <dependencies>
+      <dependency id="SimpleInjector" version="4.6.0" />
+      <dependency id="SpecFlow" version="3.0.213" />
+    </dependencies>
+  </metadata>
+  <files>
+      
+    <file src="..\..\LICENSE" target="LICENSE" />
+    <file src="bin\Release\net45\SpecFlow.SimpleInjector.SpecFlowPlugin.dll" target="lib\net45\SpecFlow.SimpleInjector.SpecFlowPlugin.dll" />
+    <file src="bin\Release\net45\SpecFlow.SimpleInjector.SpecFlowPlugin.pdb" target="lib\net45\SpecFlow.SimpleInjector.SpecFlowPlugin.pdb" />
+    <file src="bin\Release\net471\SpecFlow.SimpleInjector.SpecFlowPlugin.dll" target="lib\net471\SpecFlow.SimpleInjector.SpecFlowPlugin.dll" />
+    <file src="bin\Release\net471\SpecFlow.SimpleInjector.SpecFlowPlugin.pdb" target="lib\net471\SpecFlow.SimpleInjector.SpecFlowPlugin.pdb" />
+    <file src="bin\Release\netstandard2.0\SpecFlow.SimpleInjector.SpecFlowPlugin.dll" target="lib\netstandard2.0\SpecFlow.SimpleInjector.SpecFlowPlugin.dll" />
+    <file src="bin\Release\netstandard2.0\SpecFlow.SimpleInjector.SpecFlowPlugin.pdb" target="lib\netstandard2.0\SpecFlow.SimpleInjector.SpecFlowPlugin.pdb" />
+    
+  </files>
+</package>
