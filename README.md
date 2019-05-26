@@ -1,10 +1,10 @@
 ﻿# SpecFlow.SimpleInjector
 SpecFlow plugin for using SimpleInjector as a dependency injection framework for step definitions.
 
+Currently supports:
 
-Currently supports
-* SpecFlow v2.2
-* SimpleInjector v3.0 or above
+* SpecFlow v3.0.213
+* SimpleInjector v4.6.0 or above
 
 License: Apache (https://github.com/jguc/SpecFlow.SimpleInjector/blob/master/LICENSE)
 
@@ -30,16 +30,21 @@ A typical dependency builder method probably looks like this:
       var builder = Dependencies.CreateContainer();
 
       //TODO: add customizations, stubs required for testing
-	  builder.Verify();
-      
+
       return builder;
     }
 
-## Plugin based on 
+## Plugin based on
 
 http://gasparnagy.com/2016/08/specflow-tips-customizing-dependency-injection-with-autofac/
 
 ## Release history
+
+#### v2.0.0
+
+* Support for SpecFlow v3.0.213
+* Support for SimpleInjector v4.6.0
+* Updated test project
 
 #### v1.1.0
 
