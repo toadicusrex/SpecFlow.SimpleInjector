@@ -11,10 +11,10 @@ environment:
 dotnet_csproj:
   patch: true
   file: '*.csproj'
-  version: "$(BaseVersion"
-  package_version: "$(BaseVersion"
-  assembly_version: "$(BaseVersion"
-  file_version: "$(BaseVersion"
+  version: "$(BaseVersion)"
+  package_version: "$(BaseVersion)"
+  assembly_version: "$(BaseVersion)"
+  file_version: "$(BaseVersion)"
   informational_version: "$(NugetVersion)"
 
 nuget:

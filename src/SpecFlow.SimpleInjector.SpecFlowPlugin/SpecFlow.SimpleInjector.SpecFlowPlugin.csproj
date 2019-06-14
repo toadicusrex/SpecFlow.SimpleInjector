@@ -11,6 +11,6 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="SimpleInjector" Version="4.6.0" />
-    <PackageReference Include="SpecFlow" Version="3.0.213" />
+    <PackageReference Include="SpecFlow" Version="3.0.220" />
   </ItemGroup>
 </Project>
